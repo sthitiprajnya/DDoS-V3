@@ -1,0 +1,23 @@
+appId: com.hyperclaw.DDoS
+productName: DDoS GUI
+artifactName: DDoS_GUI.${ext}
+copyright: Copyright © 2022 Hyperclaw79
+directories:
+  output: dist/${os}
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null
+win:
+  publisherName: Hyperclaw79
+  icon: resources/icon.ico
+  target: [portable]
+linux:
+  icon: resources/DDoS.png
+  synopsis: DDoS GUI
+  description: This is the GUI Dashboard for the DDoS Botnet.
+  category: Security
+  target: [AppImage]
